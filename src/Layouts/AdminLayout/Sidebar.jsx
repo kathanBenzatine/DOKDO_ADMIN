@@ -40,7 +40,7 @@ function Sidebar({ open, onClose, setCurrentRouteTitle }) {
                             className={`ml-[52px] mt-[44px] flex items-center`}
                         >
                             <div className="ml-1 mt-1 h-2.5 text-[26px] font-bold uppercase text-navy-700 dark:text-white">
-                                BIG5
+                               DOKDO
                             </div>
                         </div>
                         <div className="mb-7 mt-[58px] h-px bg-gray-200 dark:bg-white/10" />

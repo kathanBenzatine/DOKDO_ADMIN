@@ -7,10 +7,7 @@ import {
     Dashboard,
     Login,
     NotFound,
-    AppSettings,
-    Config,
-    UserList,
-    UserReferralTree,
+
 } from '../pages'
 
 function Router() {
@@ -22,13 +19,6 @@ function Router() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/admin/list" element={<AdminList />} />
                 <Route path="/admin/create" element={<CreateAdmin />} />
-                <Route path="app-setting" element={<AppSettings />} />
-                <Route path="config" element={<Config />} />
-                <Route path="user-list" element={<UserList />} />
-                <Route
-                    path="user-list/referral/:id"
-                    element={<UserReferralTree />}
-                />
 
                 <Route path="*" element={<NotFound />} />
             </Route>
