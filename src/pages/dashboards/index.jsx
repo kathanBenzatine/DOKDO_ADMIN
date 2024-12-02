@@ -60,7 +60,8 @@ function Dashboard() {
                         value={numberFormateLabel(
                             dashboardData?.total_user || 0,
                         )}
-                        bgColor={'bg-primary-gradient dark:!bg-navy-700'}
+                        // bgColor={'bg-primary-gradient dark:!bg-navy-700'}
+                        bgColor={'bg-secondaryBlack text-white dark:bg-white dark:text-secondaryBlack'}
                         cardBg="bg-white"
                         titleColor="text-gray-600"
                         valueColor="text-navy-700 dark:text-white"
@@ -75,7 +76,8 @@ function Dashboard() {
                         value={numberFormateLabel(
                             dashboardData?.total_active_user || 0,
                         )}
-                        bgColor={'bg-primary-gradient dark:!bg-navy-700'}
+                        // bgColor={'bg-primary-gradient dark:!bg-navy-700'}
+                        bgColor={'bg-secondaryBlack text-white dark:bg-white dark:text-secondaryBlack'}
                         cardBg="bg-white"
                         titleColor="text-gray-600"
                         valueColor="text-navy-700 dark:text-white"
@@ -90,7 +92,8 @@ function Dashboard() {
                         value={numberFormateLabel(
                             dashboardData?.total_mining_point || 0,
                         )}
-                        bgColor={'bg-primary-gradient dark:!bg-navy-700'}
+                        // bgColor={'bg-primary-gradient dark:!bg-navy-700'}
+                        bgColor={'bg-secondaryBlack text-white dark:bg-white dark:text-secondaryBlack'}
                         cardBg="bg-white"
                         titleColor="text-gray-600"
                         valueColor="text-navy-700 dark:text-white"
@@ -106,7 +109,8 @@ function Dashboard() {
                             dashboardData?.total_covered_distance || 0,
                         )}
                         valueLabel={'KM'}
-                        bgColor={'bg-primary-gradient dark:!bg-navy-700'}
+                        // bgColor={'bg-primary-gradient dark:!bg-navy-700'}
+                        bgColor={'bg-secondaryBlack text-white dark:bg-white dark:text-secondaryBlack'}
                         cardBg="bg-white"
                         titleColor="text-gray-600"
                         valueColor="text-navy-700 dark:text-white"
@@ -114,34 +118,7 @@ function Dashboard() {
                         iconColor="text-black "
                     />
                 </div>
-                <div>
-                    <MiniStatistics
-                        icon={<AnimalIcon size={30} />}
-                        title={t('total_animal')}
-                        value={numberFormateLabel(
-                            dashboardData?.total_big || 0,
-                        )}
-                        bgColor={'bg-primary-gradient dark:!bg-navy-700'}
-                        cardBg="bg-white"
-                        titleColor="text-gray-600"
-                        valueColor="text-navy-700 dark:text-white"
-                        detailColor="text-gray-600"
-                        iconColor="text-black "
-                    />
-                </div>
-                <div>
-                    <MiniStatistics
-                        icon={<AnimalIcon size={30} />}
-                        title={t('total_sold_animal')}
-                        value={numberFormateLabel(dashboardData?.sold_big || 0)}
-                        bgColor={'bg-primary-gradient dark:!bg-navy-700'}
-                        cardBg="bg-white"
-                        titleColor="text-gray-600"
-                        valueColor="text-navy-700 dark:text-white"
-                        detailColor="text-gray-600"
-                        iconColor="text-black"
-                    />
-                </div>
+
             </div>
 
             {/*  */}

@@ -66,7 +66,6 @@ function CustomTable({
                   onSortingChange: setSorting,
               },
     )
-
     // const [pageNumbers, setPageNumbers] = useState([])
     const [sortingFlag, setSortingFlag] = useState(false)
 
@@ -227,7 +226,7 @@ function CustomTable({
                                     table.getState().pagination.pageSize,
                                 )
                         }}
-                        className={`linear text-black flex items-center justify-center rounded-full bg-primary-gradient p-2 text-lg text-[#000] transition duration-200 dark:bg-dark-primary-gradient`}
+                        className={`cursor-pointer linear text-black flex items-center justify-center rounded-full bg-primary-gradient p-2 text-lg text-[#000] transition duration-200 dark:bg-dark-primary-gradient `}
                         disabled={!table.getCanPreviousPage()}
                     >
                         <MdKeyboardDoubleArrowLeft />
@@ -242,7 +241,7 @@ function CustomTable({
                                 )
                         }}
                         disabled={!table.getCanPreviousPage()}
-                        className={`linear text-black flex items-center justify-center rounded-full bg-primary-gradient p-2 text-lg text-[#000] transition duration-200 dark:bg-dark-primary-gradient`}
+                        className={`cursor-pointer linear text-black flex items-center justify-center rounded-full bg-primary-gradient p-2 text-lg text-[#000] transition duration-200 dark:bg-dark-primary-gradient`}
                     >
                         <MdChevronLeft />
                     </button>
@@ -255,7 +254,7 @@ function CustomTable({
                                     table.getState().pagination.pageSize,
                                 )
                         }}
-                        className={`linear active:primary text-black flex items-center justify-center rounded-full bg-primary-gradient p-2 text-lg text-[#000] transition duration-200 dark:bg-dark-primary-gradient`}
+                        className={`cursor-pointer linear active:primary text-black flex items-center justify-center rounded-full bg-primary-gradient p-2 text-lg text-[#000] transition duration-200 dark:bg-dark-primary-gradient `}
                         disabled={!table.getCanNextPage()}
                     >
                         <MdChevronRight />
@@ -270,7 +269,7 @@ function CustomTable({
                                 )
                         }}
                         disabled={!table.getCanNextPage()}
-                        className={`linear flex items-center justify-center rounded-full bg-primary-gradient p-2 text-lg text-[#000] transition duration-200 dark:bg-dark-primary-gradient`}
+                        className={`cursor-pointer linear flex items-center justify-center rounded-full bg-primary-gradient p-2 text-lg text-[#000] transition duration-200 dark:bg-dark-primary-gradient `}
                     >
                         <MdKeyboardDoubleArrowRight />
                     </button>

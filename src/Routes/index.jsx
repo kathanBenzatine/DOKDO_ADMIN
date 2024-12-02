@@ -6,6 +6,7 @@ import {
     CreateAdmin,
     Dashboard,
     Login,
+    UserList,
     NotFound,
 
 } from '../pages'
@@ -19,7 +20,7 @@ function Router() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/admin/list" element={<AdminList />} />
                 <Route path="/admin/create" element={<CreateAdmin />} />
-
+                <Route path="user-list" element={<UserList />} />
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>

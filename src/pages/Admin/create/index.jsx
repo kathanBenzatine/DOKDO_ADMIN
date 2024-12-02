@@ -180,7 +180,7 @@ function CreateAdmin() {
                             <div className="m-auto w-[200px]">
                                 <button
                                     type="submit"
-                                    className="shadow-btnShadow mt-6 w-full rounded-xl bg-primary-gradient py-3 text-base font-bold text-[#000] transition duration-200 dark:bg-dark-primary-gradient"
+                                    className=" mt-6 w-full rounded-xl bg-secondaryBlack py-3 text-base font-bold text-white transition duration-200 dark:text-white  hover:bg-primary active:bg-primary dark:bg-brand-400 dark:hover:bg-brand-300 dark:active:bg-brand-200"
                                 >
                                     {t('Submit')}
                                 </button>

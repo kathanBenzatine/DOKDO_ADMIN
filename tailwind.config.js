@@ -143,6 +143,7 @@ module.exports = {
             primary: '#0052FF',
             secondary: '#C6FF50',
             secondaryBlack: '#141414',
+            // secondaryBlack: '#131313',
             secondaryWhite: '#F8F8F8',
             gray: {
                 50: '#F5F6FA',

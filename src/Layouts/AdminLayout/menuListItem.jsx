@@ -1,17 +1,19 @@
 import {
     MdDashboard,
-    MdOutlineDiversity1,
     MdOutlineSupervisorAccount,
-    MdOutlineSupportAgent,
-    MdSettings,
 } from 'react-icons/md'
-import { AnimalIcon } from '../../assets'
 
 export const menuListItem = [
     {
         name: 'Dashboard',
         path: '/dashboard',
         icon: <MdDashboard className="h-6 w-6" />,
+        collapse: false,
+    },
+    {
+        name: 'User List',
+        path: '/user-list',
+        icon: <MdOutlineSupervisorAccount className="h-6 w-6" />,
         collapse: false,
     },
     {

@@ -107,7 +107,7 @@ function Login() {
 
                                     <button
                                         type="submit"
-                                        className="shadow-btnShadow w-full rounded-xl bg-primary-gradient py-3 text-base font-bold text-secondaryBlack transition duration-200 hover:bg-primary active:bg-primary dark:bg-brand-400 dark:hover:bg-brand-300 dark:active:bg-brand-200"
+                                        className="bg-secondaryBlack w-full rounded-xl  py-3 text-base font-bold text-white transition duration-200 hover:bg-primary active:bg-primary dark:bg-brand-400 dark:hover:bg-brand-300 dark:active:bg-brand-200"
                                     >
                                         {t('login')}
                                     </button>
@@ -115,7 +115,7 @@ function Login() {
                             </form>
                         </div>
                     </div>
-                    <div className="absolute right-0 hidden h-full min-h-screen items-center justify-center rounded-bl-[250px] bg-primary-gradient md:block lg:flex lg:w-[49vw] 2xl:w-[44vw]">
+                    <div className="absolute right-0 hidden h-full min-h-screen items-center justify-center rounded-bl-[250px] bg-secondaryBlack md:block lg:flex lg:w-[49vw] 2xl:w-[44vw]">
                         <div
                             className="absolute flex h-full w-full items-end justify-center bg-cover bg-center lg:rounded-bl-[120px] xl:rounded-bl-[200px]"
                             style={{
@@ -123,7 +123,7 @@ function Login() {
                                 backgroundPosition: 'center',
                                 backgroundSize: 'contain',
                                 backgroundRepeat: 'no-repeat',
-                                width: '50%',
+                                width: '30%',
                             }}
                         />
                     </div>

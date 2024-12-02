@@ -147,7 +147,7 @@ function Navbar(props) {
                     <Dropdown
                         button={
                             <img
-                                className="h-10 w-10 cursor-pointer rounded-full object-contain"
+                                className="h-10 w-10 cursor-pointer rounded-full border border-solid border-gray-50 bg-secondaryBlack object-contain"
                                 src={LogoImage}
                                 alt="avatar"
                             />
@@ -194,21 +194,37 @@ function Navbar(props) {
                         title={t('ChangePassword')}
                         footerComponent={
                             <>
-                                <Button
+                                {/* <Button
                                     type="submit"
-                                    className="mr-2 !bg-primary-gradient font-bold text-[#000] shadow-btnShadow"
+                                    className="mr-2 bg-secondaryBlack font-bold text-white"
                                     onClick={handleSubmit(onSubmit)}
                                 >
                                     {t('Submit')}
-                                </Button>
-                                <Button
+                                </Button> */}
+                                <button
+                                  onClick={handleSubmit(onSubmit)}
+                                    type="submit"
+                                    className=" w-25p rounded-xl  py-3 mr-2 bg-secondaryBlack font-bold text-white hover:bg-primary active:bg-primary dark:bg-brand-400 dark:hover:bg-brand-300 dark:active:bg-brand-200"
+                                >
+                                    {t('Submit')}
+                                </button>
+                                <button
+                                className=" w-25p rounded-xl  py-3 mr-2 bg-secondaryBlack font-bold text-white hover:bg-primary active:bg-primary dark:bg-brand-400 dark:hover:bg-brand-300 dark:active:bg-brand-200"
                                     onClick={() => {
                                         onClose()
                                         reset()
                                     }}
                                 >
                                     {t('Close')}
-                                </Button>
+                                </button>
+                                {/* <Button
+                                    onClick={() => {
+                                        onClose()
+                                        reset()
+                                    }}
+                                >
+                                    {t('Close')}
+                                </Button> */}
                             </>
                         }
                         scrollBehavior="inside"

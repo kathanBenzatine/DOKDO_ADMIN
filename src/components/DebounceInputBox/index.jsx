@@ -3,6 +3,7 @@ import { DebounceInput } from 'react-debounce-input'
 import { MdSearch } from 'react-icons/md'
 
 function DebounceInputBox({
+    id,
     placeholder,
     onSearch,
     showIcon,
@@ -23,7 +24,7 @@ function DebounceInputBox({
                     <MdSearch className="ml-2 mr-2 h-[25px] w-[25px]" />
                     <DebounceInput
                         value={value}
-                        type="text"
+                        type="text"  id={id}
                         className={`block w-full pr-3 text-sm text-navy-700 outline-none dark:!bg-navy-900 dark:text-white ${className}`}
                         placeholder={placeholder}
                         debounceTimeout={300}
