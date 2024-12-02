@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('react-datepicker/dist/react-datepicker.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'AppleSDGothic';
+    src: url(assets/font/AppleSDGothicNeoM.ttf);
+    font-weight: 400;
+}
+
+/* @font-face {
+    font-family: 'AppleSDGothic';
+    src: url(assets/font/AppleSDGothicNeoB.ttf);
+    font-weight: 700;
+} */
+@font-face {
+    font-family: 'AppleSDGothic';
+    src: url(assets/font/AppleSDGothicNeoH.ttf);
+    font-weight: 700;
+}
+
+@layer base {
+    html {
+        font-family: 'AppleSDGothic', sans-serif !important;
+        -webkit-font-smoothing: antialiased;
+        letter-spacing: -0.5px;
+    }
+    body {
+        font-family: 'AppleSDGothic', sans-serif !important;
+        letter-spacing: -0.5px !important;
+        --tw-bg-opacity: 1;
+        background-color: rgb(244 247 254 / var(--tw-bg-opacity)) !important;
+    }
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+    .error {
+        border: 1px solid #f53939 !important;
+    }
+    .plan-after::after {
+        content: '';
+        border: 1px solid gray;
+        height: 20px;
+    }
+    .custom-circle-slider {
+        background: linear-gradient(
+            269.62deg,
+            #30fc7b 0.3%,
+            #c6e238 99.67%
+        ) !important;
+        border: 3px solid rgb(255, 255, 255) !important;
+        width: 20px !important;
+        height: 20px !important;
+    }
+    input {
+        font-family: 'AppleSDGothic';
+    }
+    .dark .active-icon .custom-icon {
+        fill: white;
+    }
+    .active-icon .custom-icon {
+        fill: rgb(0 82 255 / var(--tw-text-opacity));
+    }
+}
