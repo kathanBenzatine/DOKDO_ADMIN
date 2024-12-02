@@ -16,7 +16,7 @@ import { FormProvider, useForm } from 'react-hook-form'
 import { ErrorMessage } from '@hookform/error-message'
 import { changeLanguage, toggleTheme } from '../../store/action/themeRedux'
 import { useTranslation } from 'react-i18next'
-import { big5 } from '../../constant/const'
+import { DokdoConst } from '../../constant/const'
 
 function Navbar(props) {
     const { onOpenSidenav, brandText } = props
@@ -42,7 +42,7 @@ function Navbar(props) {
     const password = watch('new_password', '')
 
     const logout = () => {
-        localStorage.removeItem(big5)
+        localStorage.removeItem(DokdoConst)
         dispatch(resetUserInfo())
         navigate('/')
     }

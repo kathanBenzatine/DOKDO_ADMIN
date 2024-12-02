@@ -1,5 +1,5 @@
 export const EmailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
-export const big5 = 'big5'
+export const DokdoConst = 'DokdoConst'
 export const errorMessage = 'something is wrong!'
 
 export const supportStatus = {

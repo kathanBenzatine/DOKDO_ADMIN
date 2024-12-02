@@ -15,7 +15,7 @@ import {
 import dayjs from 'dayjs'
 import Swal from 'sweetalert2'
 import { useTranslation } from 'react-i18next'
-import { big5 } from '../../../constant/const'
+import { DokdoConst } from '../../../constant/const'
 import { setBreadcrumbMenuName } from '../../../store/action/themeRedux'
 
 function AdminList() {
@@ -24,7 +24,7 @@ function AdminList() {
     const { t } = useTranslation()
     const [globalFilter, setGlobalFilter] = useState('')
     const dispatch = useDispatch()
-    const userData = JSON.parse(localStorage.getItem(big5))
+    const userData = JSON.parse(localStorage.getItem(DokdoConst))
     useEffect(() => {
         dispatch(getAdminListAction())
         dispatch(setBreadcrumbMenuName('Admin List'))

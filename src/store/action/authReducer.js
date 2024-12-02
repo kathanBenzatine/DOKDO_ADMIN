@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axiosInstance from '../../utils/axiosInstance'
-import { big5, errorMessage } from '../../constant/const'
+import { DokdoConst, errorMessage } from '../../constant/const'
 import { toastError, toastSuccess } from '../../utils/toaster'
 
 const initialState = {
@@ -56,12 +56,12 @@ const authSlice = createSlice({
         resetUserInfo: (state) => {
             state.user = null
             state.isLogin = false
-            localStorage.removeItem(big5)
+            localStorage.removeItem(DokdoConst)
         },
         setLoginUserData: (state, action) => {
             state.user = action.payload
             state.isLogin = action.payload.isLogin
-            localStorage.setItem(big5, JSON.stringify({ ...action.payload }))
+            localStorage.setItem(DokdoConst, JSON.stringify({ ...action.payload }))
         },
         setResetPasswordFlag: (state) => {
             state.resetPassword = false
@@ -78,7 +78,7 @@ const authSlice = createSlice({
                 state.loading = false
                 state.user = action.payload
                 state.isLogin = action.payload.isLogin
-                localStorage.setItem(big5, JSON.stringify(action.payload))
+                localStorage.setItem(DokdoConst, JSON.stringify(action.payload))
             })
             .addCase(loginAction.rejected, (state) => {
                 state.loading = false

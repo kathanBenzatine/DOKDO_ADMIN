@@ -4,7 +4,7 @@ import { Navigate, Outlet, useLocation } from 'react-router-dom'
 import { Portal } from '@chakra-ui/portal'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { big5 } from '../../constant/const'
+import { DokdoConst } from '../../constant/const'
 import { jwtTokenVerify } from '../../utils/jwtTokenVerify'
 import { useDispatch, useSelector } from 'react-redux'
 import { toastError } from '../../utils/toaster'
@@ -49,7 +49,7 @@ function AdminLayout() {
         return () => {}
     }, [location])
 
-    let user = localStorage.getItem(big5)
+    let user = localStorage.getItem(DokdoConst)
     if (!user) {
         return <Navigate to={'/auth/login'} />
     }

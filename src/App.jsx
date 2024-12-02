@@ -2,7 +2,7 @@ import { Toaster } from 'react-hot-toast'
 import './App.css'
 import Router from './Routes'
 import { useEffect } from 'react'
-import { big5 } from './constant/const'
+import { DokdoConst } from './constant/const'
 import { setLoginUserData } from './store/action/authReducer'
 import { useDispatch } from 'react-redux'
 import { ChakraProvider } from '@chakra-ui/react'
@@ -13,7 +13,7 @@ function App() {
     const dispatch = useDispatch()
     const darkMode = localStorage.getItem('darkMode')
     useEffect(() => {
-        let user = localStorage.getItem(big5)
+        let user = localStorage.getItem(DokdoConst)
         if (user) {
             let userData = JSON.parse(user)
             dispatch(setLoginUserData(userData))
