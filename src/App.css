@@ -320,3 +320,6 @@ table .reward-tr td p {
         align-items: baseline;
     }
 }
+.react-datepicker-wrapper{
+    width: 100% !important;
+}

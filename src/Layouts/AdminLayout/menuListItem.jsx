@@ -17,6 +17,12 @@ export const menuListItem = [
         collapse: false,
     },
     {
+        name: 'Campaign List',
+        path: '/campaign-list',
+        icon: <MdOutlineSupervisorAccount className="h-6 w-6" />,
+        collapse: false,
+    },
+    {
         name: 'Admin',
         path: '/admin',
         icon: <MdOutlineSupervisorAccount className="h-6 w-6" />,

@@ -194,13 +194,6 @@ function Navbar(props) {
                         title={t('ChangePassword')}
                         footerComponent={
                             <>
-                                {/* <Button
-                                    type="submit"
-                                    className="mr-2 bg-secondaryBlack font-bold text-white"
-                                    onClick={handleSubmit(onSubmit)}
-                                >
-                                    {t('Submit')}
-                                </Button> */}
                                 <button
                                   onClick={handleSubmit(onSubmit)}
                                     type="submit"
@@ -217,14 +210,6 @@ function Navbar(props) {
                                 >
                                     {t('Close')}
                                 </button>
-                                {/* <Button
-                                    onClick={() => {
-                                        onClose()
-                                        reset()
-                                    }}
-                                >
-                                    {t('Close')}
-                                </Button> */}
                             </>
                         }
                         scrollBehavior="inside"

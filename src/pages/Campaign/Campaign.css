@@ -1,0 +1,41 @@
+.logo {
+    display: none;
+}
+.task-logo input {
+    border: 1px solid #131313 !important;
+    height: 32px !important;
+}
+.task-logo input::placeholder {
+    color: #dddddd;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.task-logo input.form-control:focus {
+    box-shadow: none;
+}
+.img-upload{
+    margin-top: 20px;
+    border: 1px solid #141414;
+    padding: 20px;
+    border-radius: 10px;
+    width: 75px !important;
+    height: 75px !important;
+    text-align: center;
+    align-content: center;
+}
+.uploading-class{
+    display: flex;
+}
+
+/* .image-LogoImg{
+    width: 75px;
+    height: 75px;
+} */
+.logo-class{
+    
+    max-height: 75px;
+    max-width: 75px;
+    display: flex;
+    align-items: flex-start;
+}

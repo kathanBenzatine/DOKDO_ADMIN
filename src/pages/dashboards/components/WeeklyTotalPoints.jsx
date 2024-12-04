@@ -32,36 +32,8 @@ function WeeklyTotalPoints({ dates, totalUsers }) {
         datasets: [
             {
                 data: totalUsers,
-                backgroundColor: (context) => {
-                    const chart = context.chart
-                    const { ctx, chartArea } = chart
-
-                    if (!chartArea) return null // Wait until chartArea is ready
-                    const gradient = ctx.createLinearGradient(
-                        chartArea.left,
-                        0,
-                        chartArea.right,
-                        0,
-                    )
-                    gradient.addColorStop(1, '#30FC7B')
-                    gradient.addColorStop(0, '#C6E238')
-                    return gradient
-                },
-                borderColor: (context) => {
-                    const chart = context.chart
-                    const { ctx, chartArea } = chart
-
-                    if (!chartArea) return null // Wait until chartArea is ready
-                    const gradient = ctx.createLinearGradient(
-                        chartArea.left,
-                        0,
-                        chartArea.right,
-                        0,
-                    )
-                    gradient.addColorStop(1, '#30FC7B')
-                    gradient.addColorStop(0, '#C6E238')
-                    return gradient
-                },
+                backgroundColor: '#1177fe94',
+                borderColor: "#1177FE",
                 borderWidth: 2,
                 fill: true,
             },

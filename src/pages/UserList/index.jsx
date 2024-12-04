@@ -39,21 +39,20 @@ function UserList() {
                 </div>
             ),
         }),
-
-        columnHelper.accessor('username', {
-            header: t('Name'),
+        columnHelper.accessor('first_name', {
+            header:  <span className="inline-block w-max">{t('Name')}</span>,
             cell: (info) => (
                 <div>
-                    {info.row.original?.referral_count > 0 ? (
-                        <Link
-                            className="underline"
-                            to={`/user-list/referral/${info.row.original._id}`}
-                        >
-                            {info.getValue() || '-'}
-                        </Link>
-                    ) : (
-                        <> {info.getValue() || '-'}</>
-                    )}
+                     <>{info.getValue()? `${info.getValue()} ${info.row.original?.last_name}` : `-`}</>
+                 </div>
+            ),
+            enableSorting: true,
+        }),
+        columnHelper.accessor('username', {
+            header: <span className="inline-block w-max">{t('UserName')}</span>,
+            cell: (info) => (
+                <div>
+                     <> {info.getValue() || '-'}</>
                 </div>
             ),
             enableSorting: true,
@@ -67,7 +66,42 @@ function UserList() {
             ),
             enableSorting: true,
         }),
-        
+        columnHelper.accessor('wallet_network', {
+            cell: (info) => info.getValue() || '-',
+            header: () => (
+                <span className="inline-block w-max">{t('WalletNetwork')}</span>
+            ),
+            enableSorting: true,
+        }),
+        columnHelper.accessor('is_premium', {
+            cell: (info) => info.getValue()==true?'Is Premium': 'Not Premium',
+            header: () => (
+                <span className="inline-block w-max">{t('premium')}</span>
+            ),
+            enableSorting: true,
+        }),
+        columnHelper.accessor('referral_code', {
+            cell: (info) => {
+                if(info.getValue()) {
+                    return info.getValue()
+                }else return "-"
+            },
+            header: () => (
+                <span className="inline-block w-max">{t('ReferralCode')}</span>
+            ),
+            enableSorting: true,
+        }),
+        columnHelper.accessor('total_xp', {
+            cell: (info) => {
+                if(info.getValue() !==null && info.getValue()!==undefined && info.getValue()!=="") {
+                    return info.getValue()
+                }else return "-"
+            },
+            header: () => (
+                <span className="inline-block w-max">{t('total_XP')}</span>
+            ),
+            enableSorting: true,
+        }),
         columnHelper.accessor('discord_connected', {
             cell: (info) => info.getValue()==true?'Connected': 'Disconnected',
             header: () => (

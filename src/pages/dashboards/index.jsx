@@ -85,7 +85,7 @@ function Dashboard() {
                         iconColor="text-black "
                     />
                 </div>
-                <div>
+                {/* <div>
                     <MiniStatistics
                         icon={<MdOutlineBarChart className="text-4xl" />}
                         title={t('NumberOfTotalBIPPoints')}
@@ -117,7 +117,7 @@ function Dashboard() {
                         detailColor="text-gray-600"
                         iconColor="text-black "
                     />
-                </div>
+                </div> */}
 
             </div>
 
@@ -130,12 +130,12 @@ function Dashboard() {
                             totalUsers={barTotalUser}
                         />
                     </div>
-                    <div className="col-span-6 md:col-span-6 3xl:col-span-6">
+                    {/* <div className="col-span-6 md:col-span-6 3xl:col-span-6">
                         <WeeklyTotalPoints
                             dates={barUserDate}
                             totalUsers={totalWeeklyPoints}
                         />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

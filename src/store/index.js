@@ -4,6 +4,7 @@ import dashboardReducer from './action/dashboardReducer'
 import themeRedux from './action/themeRedux'
 import adminReducer from './action/adminReducer'
 import userListReducer from './action/userListReducer'
+import campaignListReducer from './action/campaignListReducer'
 const store = configureStore({
     reducer: {
         auth: authReducer,
@@ -11,6 +12,7 @@ const store = configureStore({
         theme: themeRedux,
         adminReducer: adminReducer,
         user: userListReducer,
+        campaign:campaignListReducer
     },
 })
 

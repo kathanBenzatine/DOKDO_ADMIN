@@ -129,12 +129,13 @@ module.exports = {
             '4xl': '1850px',
             '4xl-max': { max: '1850px' },
         },
-        backgroundImage: {
-            'primary-gradient':
-                'linear-gradient(269.62deg, #30FC7B 0.3%, #C6E238 99.67%)',
-            'dark-primary-gradient':
-                'linear-gradient(269.62deg, #30FC7B 0.3%, #C6E238 99.67%)',
-        },
+        // backgroundImage: {
+        //     'primary-gradient':
+        //         'linear-gradient(269.62deg, #30FC7B 0.3%, #C6E238 99.67%)',
+        //     'dark-primary-gradient':
+        //         'linear-gradient(269.62deg, #30FC7B 0.3%, #C6E238 99.67%)',
+        // },
+
         colors: () => ({
             white: '#ffffff',
             lightPrimary: '#F4F7FE',

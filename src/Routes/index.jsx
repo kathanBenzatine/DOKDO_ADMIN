@@ -8,6 +8,7 @@ import {
     Login,
     UserList,
     NotFound,
+    Campaign,
 
 } from '../pages'
 
@@ -21,6 +22,7 @@ function Router() {
                 <Route path="/admin/list" element={<AdminList />} />
                 <Route path="/admin/create" element={<CreateAdmin />} />
                 <Route path="user-list" element={<UserList />} />
+                <Route path="/campaign-list" element={<Campaign />} />
                 <Route path="*" element={<NotFound />} />
             </Route>
         </Routes>
